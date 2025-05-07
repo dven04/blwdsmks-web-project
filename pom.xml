@@ -7,6 +7,7 @@
   <version>1.0-SNAPSHOT</version>
   <name>blwdsmks-web-project Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,7 +16,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <build>
     <finalName>blwdsmks-web-project</finalName>
   </build>
+
+<distributionManagement>
+  <repository>
+    <id>blwdsmks-blwdsmks-devops-cicd</id>
+    <url>https://blwdsmks-654479364832.d.codeartifact.ap-southeast-1.amazonaws.com/maven/blwdsmks-devops-cicd/</url>
+  </repository>
+</distributionManagement>
+
 </project>

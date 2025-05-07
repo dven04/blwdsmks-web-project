@@ -1,0 +1,35 @@
+<settings>
+
+<servers>
+  <server>
+    <id>blwdsmks-blwdsmks-devops-cicd</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+
+<profiles>
+  <profile>
+    <id>blwdsmks-blwdsmks-devops-cicd</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>blwdsmks-blwdsmks-devops-cicd</id>
+        <url>https://blwdsmks-654479364832.d.codeartifact.ap-southeast-1.amazonaws.com/maven/blwdsmks-devops-cicd/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+
+<mirrors>
+  <mirror>
+    <id>blwdsmks-blwdsmks-devops-cicd</id>
+    <name>blwdsmks-blwdsmks-devops-cicd</name>
+    <url>https://blwdsmks-654479364832.d.codeartifact.ap-southeast-1.amazonaws.com/maven/blwdsmks-devops-cicd/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+
+</settings>
